@@ -1,10 +1,45 @@
-.judul-1{
-    color: navy;
-    font-size: 48px;
-    font-family: "DM Serif Display", serif;
+.judul-2 {
+    position: relative;
+    font-size: 2.5rem;
+    color: #eda5c7;
+    font-weight: 600;
 }
-.paragraf{
-    color: blue; 
-    font-size: 24px;
-    font-family: "DM Serif Display", serif;
+
+.judul-2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    background-color:#eda5c7;
+    width: 200px;
+    height: 5px;
+}
+.skill-card {
+    border: 2px solid #eda5c7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translate(-5px, 5px);
+    box-shadow: 6px 6px 0px #eda5c7;
+
+}
+
+.skill-card-title {
+    font-size: 1.5rem;
+    color: #eda5c7;
+    font-weight: 600;
+    text-align: center;
+}
+
+.skill-card-desc {
+    font-size: 1rem;
+    color: #eda5c7;
+    font-weight: 400;
+    text-align: center;
 }
