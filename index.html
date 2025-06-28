@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Forever Young</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -22,20 +22,25 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Education</a>
+            <a class="nav-link" href="#skills">Skill</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#educations">Educations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="text-white" style="background-color: #eda5c7;">
+  <!-- home section -->
+  <div id="home" class="text-white" style="background-color: #eda5c7;">
     <div class="container py-5" style="display: flex; gap: 20px;">
       <div>
         <img src="./asssets/images/Jang wonyoung.jpg"
@@ -53,7 +58,9 @@
       </div>
     </div>
   </div>
-  <div class="container py-5">
+
+  <!-- Skills section -->
+  <div id="skills" class="container py-5">
     <h2 class="judul-2"><i class="bi bi-laptop"></i> Technical Skills</h2>
 
     <div class="row mt-4">
@@ -92,9 +99,10 @@
           </p>
         </div>
       </div>
-
     </div>
-    <div class="container py-5">
+
+    <!-- contact section -->
+    <div id="educations" class="container py-5">
       <h2 class="judul-2"><i class="bi bi-book"></i> Educations</h2>
 
       <div class="row mt-4">
@@ -129,8 +137,8 @@
     </div>
 
    
-     <div class="form-container mt-3">
-        <div class="row mb-5" style="width: 70vw;">
+     <div id="contact" class="form-container mt-3">
+        <form id="form-contact" class="row mb-5" style="width: 70vw;">
            <h2 class="judul-2 mb-5"><i class="bi-phone">Kontak</h2>
             <div class="col-6 mb-2">  
                 <label for="first_name" class="form-label">First Name</label>
@@ -142,16 +150,21 @@
             </div>
             <div class="col-12 mb-2">
                 <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="message" rows="3"></textarea>
             </div>
             <div class="col-4" >
-                <button type="button" class="btn" style="background-color: #eda5c7;">Send</button>
+                <button type="submit" class="btn" style="background-color: #eda5c7;">Send</button>
             </div>   
         </div>
     </div>
+    <div class="text-white" style="background-color: #eda5c7; padding: 20px 0">
+      <p class="text-center">copyright 2024 silgia Islami</p>
+    </div>       
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"></script>
+    <script src="./asssets/script.js"></script> 
 </body>
 
 </html>
